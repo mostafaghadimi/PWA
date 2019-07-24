@@ -73,3 +73,8 @@
 - **start_url**: The start_url member is a string that represents the start URL of the web application — the prefered URL that should be loaded when the user launches the web application (e.g., when the user taps on the web application's icon from a device's application menu or homescreen). `"start_url": "/"`
 
 - **theme_color**: The theme_color member is a string that defines the default theme color for the application. This sometimes affects how the OS displays the site (e.g., on Android's task switcher, the theme color surrounds the site). `"theme_color": "red"`
+
+> In Chrome 47 and later, a splash screen is displayed for sites launched from a homescreen. This splashscreen is auto-generated from properties in the web app manifest, specifically:
+- name
+- background_color
+- The icon in the icons array that is closest to 128dpi for the device.
